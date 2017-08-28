@@ -1,0 +1,69 @@
+.content {
+  position: relative;
+}
+
+.container-width {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  color: #fff;
+  background: rgba(0,0,0,.7);
+  z-index: 500;
+  div, ul {
+    display: flex;
+    align-items: center;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+  }
+  ul > li > a {
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px;
+    margin: 4px;
+    letter-spacing: 1pt;
+  }
+  a {
+    cursor: pointer;
+    color: #fff;
+  }
+}
+
+.logo {
+  flex-grow: 1;
+  img {
+    width: 165px;
+  }
+}
+
+.social-networks {
+  flex-grow: 20;
+  a {
+    margin: auto 5px;
+  }
+}
+
+.srcroll {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
