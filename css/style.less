@@ -1,5 +1,6 @@
 .content {
   position: relative;
+  width: 100%;
 }
 
 .container-width {
@@ -66,4 +67,141 @@
   display: flex;
   justify-content: center;
   z-index: 10;
+}
+
+.block-coll-me {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: stretch;
+  height: 100%;
+  padding-top: 80px;
+}
+
+.about-me-information {
+  h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 4.5em;
+    line-height: 1;
+    color: #621112;
+    text-align: left;
+    letter-spacing: -0.5pt;
+  }
+  h1 > span {
+    display: block;
+    font-family: 'Lobster', cursive;
+    font-size: 1.2em;
+    text-align: right;
+    color: #14142e;
+    letter-spacing: 1pt;
+  }
+  h1 > span:after {
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 15px auto;
+    width: 110%;
+    margin-left: -5%;
+    background: #621112;
+  }
+  h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    color: #621112;
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+  }
+  p {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.circle-coll {
+  position: relative;
+  display: block;
+  width: 170px;
+  height: 170px;
+  margin: auto;
+  border-radius: 100%;
+  border: 1px solid #000;
+  background: #fff;
+  &:after {
+    content: '';
+    position: relative;
+    display: block;
+    left: calc(100%);
+    top: 50%;
+    width: 70%;
+    margin: auto;
+    height: 1px;
+    background: #621112;
+    z-index: -1;
+    margin-top: -1px;
+  }
+  &:before {
+    content: '';
+    position: relative;
+    display: block;
+    right: calc(100%);
+    top: 50%;
+    width: 70%;
+    margin: auto;
+    height: 1px;
+    background: #621112;
+    z-index: -1;
+    margin-top: -1px;
+  }
+  a {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: column;
+    line-height: 16px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    animation: call 1s alternate infinite linear;
+    color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    background: #621112;
+  }
+}
+
+.feedback-user {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes call {
+  100% {
+    background: rgba(98, 17, 18, 0.75);
+    box-shadow: 0 0 20px 1px rgba(98, 17, 18, 0.80);
+  }
+}
+
+@keyframes pointer {
+  100% {
+    transition: 0.5s;
+    top: 87vh;
+  }
 }
