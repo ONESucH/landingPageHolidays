@@ -6,126 +6,176 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/wow/css/libs/animate.css">
     <link rel="stylesheet" href="fonts.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="vendor/parallax-scrolling/parallax.css">
     <title>Landing Page Holiday</title>
 </head>
 <body>
 <div class="content">
-    <div class="container-width">
-        <div class="header">
+    <div class="header">
+        <div class="container-width">
             <div class="container-width">
                 <div class="logo">
                     <a href="/"><img src="images/logo_0_0.png" alt="logo"></a>
                 </div>
                 <div class="social-networks">
                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="//vk.com/vedushiy_pro"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                    <a href="//www.instagram.com/dmitryipr/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                 </div>
                 <ul>
-                    <li><a class="manned-flight" href="#manned-flight">главная</a></li>
-                    <li><a class="frameless-parachute" href="#frameless-parachute">про меня</a></li>
-                    <li><a class="english-channel" href="#english-channel">галерея</a></li>
-                    <li><a class="about" href="#about">контакты</a></li>
+                    <li><a class="go_to" href="#cont_1">главная</a></li>
+                    <li><a class="go_to" href="#cont_2">про меня</a></li>
+                    <li><a class="go_to" href="#cont_3">галерея</a></li>
+                    <li><a class="go_to" href="#cont_4">контакты</a></li>
                 </ul>
             </div>
         </div>
-        <div class="content-page">
-            <!-- Навигация на главной странице -->
-            <div class="srcroll">
-                <nav id="primary">
-                    <ul>
-                        <li>
-                            <h1>Гланая</h1>
-                            <a class="manned-flight" href="#manned-flight">View</a>
-                        </li>
-                        <li>
-                            <h1>Обо мне</h1>
-                            <a class="frameless-parachute" href="#frameless-parachute">View</a>
-                        </li>
-                        <li>
-                            <h1>Галлерея</h1>
-                            <a class="english-channel" href="#english-channel">View</a>
-                        </li>
-                        <li>
-                            <h1>Контакты</h1>
-                            <a class="about" href="#about">View</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- Текст на странице-->
-            <div id="manned-flight">
-                <header>
-                    <h1>First manned flights</h1>
-                </header>
-                <p>The first clearly recorded instance of a balloon carrying passengers used hot air to generate buoyancy and was built by the brothers Joseph-Michel and Jacques-Etienne Montgolfier in Annonay, France. After experimenting with unmanned balloons and flights with animals, the first tethered balloon flight with humans on board took place on October 15, 1783.</p>
-                <nav class="next-prev">
-                    <a class="next frameless-parachute" href="#frameless-parachute">Next</a>
-                </nav>
-            </div>
-            <div id="frameless-parachute">
-                <header>
-                    <h1>The frameless parachute</h1>
-                </header>
-                <p>André-Jacques Garnerin carried out the first jump with a silk parachute on October 22, 1797 at Parc Monceau, Paris. Garnerin's first parachute resembled a closed umbrella before he ascended; at a height of approximately 3,000 feet he severed the rope that connected his parachute to the balloon, and the basket fell to earth. Garnerin emerged uninjured.</p>
-                <nav class="next-prev">
-                    <a class="prev manned-flight" href="#manned-flight">Prev</a>
-                    <a class="next english-channel" href="#english-channel">Next</a>
-                </nav>
-            </div>
-            <div id="english-channel">
-                <header>
-                    <h1>Over the English Channel</h1>
-                </header>
-                <p>On January 7, 1785, Jean Pierre Blanchard and Dr. John Jeffries made the first flight over the English Channel, traveling from Dover to France. During the crossing the balloon lost altitude, so they began tossing everything in the gondola they possibly could, even their clothes. About two hours after take off, they crossed the French coast clad only in their underwear.</p>
-                <nav class="next-prev">
-                    <a class="prev frameless-parachute" href="#frameless-parachute">Prev</a>
-                    <a class="next about" href="#about">Next</a>
-                </nav>
-            </div>
-            <div id="about">
-                <header>
-                    <h1>About</h1>
-                </header>
-                <p>This is a jQuery parallax scrolling experiment by Jonathan Nicol.</p>
-                <nav class="next-prev">
-                    <a class="prev english-channel" href="#english-channel">Prev</a>
-                </nav>
+    </div>
+    <div class="content-pages">
+        <div id="cont_1">
+            <div class="container-width">
+                <div class="main-block-me">
+                    <div class="about-me">
+                        <h1>Дмитрий<span>Дзядуков</span></h1>
+                        <h2>Ведущий мероприятий</h2>
+                        <p>Нижний Новгород | Москва</p>
+                        <p>СВАДЬБЫ | КОРПОРАТИВЫ | ДНИ РОЖДЕНИЯ | ПРАЗДНИКИ</p>
+                    </div>
+                    <div class="call-me">
+                        <a href="#" onclick="modalWindow();">Заказать<span>Звонок</span></a>
+                    </div>
+                </div>
+                <div class="location">
+                    <span>Далее</span>
+                    <a class="go_to" href="#cont_2"></a>
+                </div>
             </div>
         </div>
-        <div id="parallax-bg4">
-            <img id="bg4-1" src="images/balloon.png" alt="cloud"/>
-            <img id="bg4-2" src="images/balloon2.png" alt="cloud"/>
-            <img id="bg4-3" src="images/balloon3.png" alt="cloud"/>
-            <img id="bg4-4" src="images/ground.png" alt="cloud"/>
+        <div id="cont_2">
+            <div class="container-width">
+                <div class="right-block wow bounceInRight">
+                    <h1><a>ВЕДУЩИЙ</a></h1>
+                    <div class="information">
+                        <p>ПРИВЕТ!
+                            Более 5 лет  веду торжества, и каждое событие всегда начинаю с чистого листа! Без пошлостей и избитых конкурсов!
+                            Работа с людьми в микрофон – это огромная привилегия, которой не научат ни в одном ВУЗе мира.
+                        </p>
+                    </div>
+                    <div class="show-more">
+                        <p>Радуюсь за молодых на свадьбе, когда вижу их счастливый взгляд.
+                            Стараюсь попадать в ноты, когда поём с именинником в Караоке.
+                            Прыгаю в бассейн в одежде с руководителями компаний…
+                            А что будет на Вашем празднике, Мы придумаем вместе!</p>
+                    </div>
+                    <button>Подробнее</button>
+                </div>
+                <div class="location">
+                    <span>Далее</span>
+                    <a class="go_to" href="#cont_3"></a>
+                </div>
+            </div>
         </div>
-        <div id="parallax-bg3">
-            <img id="bg3-1" src="images/cloud-lg1.png" alt="cloud"/>
-            <img id="bg3-2" src="images/cloud-lg1.png" alt="cloud"/>
-            <img id="bg3-3" src="images/cloud-lg1.png" alt="cloud"/>
-            <img id="bg3-4" src="images/cloud-lg1.png" alt="cloud"/>
-            <img id="bg3-5" src="images/cloud-lg1.png" alt="cloud"/>
+        <div id="cont_2_2">
+            <div class="container-width">
+                <ul>
+                    <li>
+                        <img src="../../images/icon-1.png">
+                        <span>ИСКРЕННОСТЬ</span>
+                        <span>ОТВЕТСТВЕННОСТЬ И СТИЛЬ</span>
+                    </li>
+                    <li>
+                        <img src="../../images/icon-2.png">
+                        <span>ВСЕГДА</span>
+                        <span>НА СВЯЗИ</span>
+                    </li>
+                    <li>
+                        <img src="../../images/icon-3.png">
+                        <span>ВЫГОДНЫЕ</span>
+                        <span>ЦЕНЫ</span>
+                    </li>
+                    <li>
+                        <img src="../../images/icon-4.png">
+                        <span>КРЕАТИВНЫЙ </span>
+                        <span>СЦЕНАРИЙ</span>
+                    </li>
+                    <li>
+                        <a href="//vk.com/topic-106357407_33812591">
+                            <img src="../../images/icon-5.png">
+                            <span>МНОГО</span>
+                            <span>ОТЗЫВОВ</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div id="parallax-bg2">
-            <img id="bg2-1" src="images/cloud-lg2.png" alt="cloud"/>
-            <img id="bg2-2" src="images/cloud-lg2.png" alt="cloud"/>
-            <img id="bg2-3" src="images/cloud-lg2.png" alt="cloud"/>
-            <img id="bg2-4" src="images/cloud-lg2.png" alt="cloud"/>
+        <div id="cont_3">
+            <div class="gallery">
+                <h2>Галерея</h2>
+                <ul>
+                    <li class="wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                        <a href="#"><img src="//vedushiy-dj.com/sites/default/files/styles/480x640/public/sasha_yulya_2.jpg?itok=3AjbCOGj">
+                            <span>Свадьбы</span>
+                        </a>
+                    </li>
+                    <li class="wow bounce" data-wow-iteration="2">
+                        <a href="#"><img src="//vedushiy-dj.com/sites/default/files/styles/480x640/public/kuj_5_years_0364_0.jpg?itok=400JmajF">
+                            <span>Юбилеи</span>
+                        </a>
+                    </li>
+                    <li class="wow bounce" data-wow-iteration="2">
+                        <a href="#"><img src="//vedushiy-dj.com/sites/default/files/styles/480x640/public/image-31-10-16-14-59-9.jpeg?itok=0UKpXDz8">
+                            <span>Корпоративы</span>
+                        </a>
+                    </li>
+                    <li class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="1s">
+                        <a href="#"><img src="//vedushiy-dj.com/sites/default/files/styles/480x640/public/konfetti.jpg?itok=OVfjx4T_">
+                            <span>Презентации</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="location">
+                <span>Далее</span>
+                <a class="go_to" href="#cont_4"></a>
+            </div>
         </div>
-        <div id="parallax-bg1">
-            <img id="bg1-1" src="images/cloud-lg2.png" alt="cloud"/>
-            <img id="bg1-2" src="images/cloud-lg2.png" alt="cloud"/>
-            <img id="bg1-3" src="images/cloud-lg2.png" alt="cloud"/>
-            <img id="bg1-4" src="images/cloud-lg2.png" alt="cloud"/>
+        <div id="cont_4">
+            <div class="container-width">
+                <div class="wow bounceInLeft about-call">
+                    <p>Нижний Новгород | Москва</p>
+                    <p>Улица</p>
+                    <p>+79527720404</p>
+                    <p>D.J.VEDUSHIY@GMAIL.COM</p>
+                    <button onclick="modalWindow();">Обратная связь</button>
+                </div>
+                <div class="location">
+                    <a class="back-pointer go_to" href="#cont_1"></a>
+                    <span>начало</span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<div class="modal-window">
+    <div class="anket">
+        <a onclick="modalWindow();" id="close-modal-window"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <h2>Оформите заявку</h2>
+        <p>Отправьте Ваши контактные данные<br>и я с Вами свяжусь!</p>
+        <form action="">
+            <label><input type="text" maxlength="10" pattern="^[А-Яа-яЁё\s]+$" placeholder="Имя: Александр" required></label>
+            <label><input data-inputmask="'alias': 'email'" placeholder="Ваш email" required></label>
+            <label><input type="text" data-inputmask="'mask': '+9(999)-999-99-99'" placeholder="Номер телефона" required></label>
+            <label><textarea placeholder="Введите дату события, количество гостей, место проведения" required></textarea></label>
+            <button onsubmit="modalWindow()">Отправить</button>
+        </form>
+    </div>
+</div>
 <script src="vendor/jquery/dist/jquery.min.js"></script>
-<script src="vendor/parallax-scrolling/parallax.js"></script>
+<script src="vendor/inputmask/dist/jquery.inputmask.bundle.js"></script>
+ <script src="vendor/wow/dist/wow.min.js"></script>
 <script src="js/main.min.js"></script>
 </body>
 </html>
