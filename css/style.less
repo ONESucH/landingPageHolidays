@@ -65,8 +65,8 @@
 }
 
 #cont_1, #cont_2,
-#cont_2_2, #cont_2_3,
 #cont_3, #cont_4 {
+  position: relative;
   display: block;
   padding-top: 45px;
   width: 100%;
@@ -79,8 +79,8 @@
 }
 
 #cont_2 {
-  background: url("../../images/2.jpg") no-repeat top center;
-  background-size: cover;
+  background: url("../../images/2.jpg") no-repeat top 16% left 83%;
+  background-size: 155%;
 }
 
 #cont_3 {
@@ -93,7 +93,7 @@
   background-size: cover;
 }
 
-.left-block {
+.main-block-me {
   position: absolute;
   left: 0;
   top: 100px;
@@ -215,7 +215,6 @@
   top: 100px;
   display: flex;
   flex-flow: column;
-  -webkit-box-align: center;
   align-items: center;
   max-width: 450px;
   background: rgba(232,231,231,.8);
@@ -253,6 +252,81 @@
   }
 }
 
+.left-block {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 450px;
+  background: rgba(232,231,231,.8);
+  h1 {
+    display: block;
+    width: 100%;
+    text-align: right;
+    color: #414042;
+    padding: 30px 20px 0;
+    margin-bottom: 35px;
+    font-size: 2em;
+  }
+  p {
+    padding: 0 20px;
+  }
+  h1 a {
+    border-bottom: 4px solid #c1bAb6;
+  }
+  button {
+    display: block;
+    width: 100%;
+    background: #C1B9B6;
+    border: none;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    outline: none;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    opacity: 0.8;
+    margin-top: 10px;
+  }
+}
+
+.location {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 80vh;
+  z-index: 2;
+  text-align: center;
+  a {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    display: block;
+    width: 40px;
+    height: 50px;
+    background: url("../../images/down.png") top no-repeat;
+    background-size: 20px;
+    animation: pointer 1s alternate infinite linear;
+  }
+  span {
+    color: #fff;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+  }
+}
+
+.back-pointer {
+  background: url("../../images/up.png") center no-repeat!important;
+}
+
 .show-more {
   display: none;
 }
@@ -262,6 +336,12 @@
   100% {
     box-shadow: 0 0 20px 1px #621112;
     background: rgba(98, 17, 18, 0.8);
+  }
+}
+
+@keyframes pointer {
+  100% {
+    background-position-y: bottom;
   }
 }
 
