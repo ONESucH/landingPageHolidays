@@ -9,6 +9,11 @@ new WOW().init({
     mobile: true,
     live: true
 });
+$('.carousel').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+});
 
 /* Плавное перемещение */
 $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to

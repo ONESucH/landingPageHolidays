@@ -1,0 +1,148 @@
+@import "../../css/style.min.css";
+
+.page-wedding {
+  position: relative;
+  width: 100%;
+  padding-top: 55px;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  padding: 10px 5px;
+  min-height: 90px;
+  background: rgba(0,0,0,.8);
+  p {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 2px 0;
+    color: #fff;
+    font-size: 0.7em;
+  }
+}
+
+.footer-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.name, .contacts {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.contacts {
+  p {
+    font-size: 14px;
+  }
+}
+
+.name {
+  h2 {
+    position: relative;
+    width: 100%;
+    font-size: 1.6em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #656466;
+    font-weight: 300;
+  }
+  h3 {
+    position: relative;
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #656466;
+    font-weight: 300;
+  }
+}
+
+.title {
+  h1 {
+    width: 100%;
+    padding: 10px 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 100;
+    color: #999;
+    text-transform: uppercase;
+    &:after {
+      content: '';
+      display: block;
+      height: 4px;
+      margin: 10px auto;
+      width: 70px;
+      background: #C1BAB6;
+    }
+  }
+}
+
+.menu-carousel {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  list-style: none;
+  a {
+    display: block;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: #999;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: underline;
+      color: #000;
+    }
+  }
+}
+
+#links {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding-bottom: 20px;
+  a {
+    position: relative;
+    width: 316px;
+    height: 316px;
+    align-items: stretch;
+    display: flex;
+    &:hover p {
+      transition: 1.5s;
+      opacity: 1;
+    }
+  }
+  img {
+    width: 100%;
+    opacity: 0.7;
+    &:hover {
+      transition: .6s;
+      opacity: 1;
+    }
+  }
+  p {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 60px;
+    text-transform: uppercase;
+    color: #000;
+    background: rgba(255,255,255,.9);
+    text-align: center;
+    padding: 15px 2px;
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+      transition: 1.5s;
+    }
+  }
+}
