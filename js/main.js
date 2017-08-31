@@ -10,18 +10,20 @@ new WOW().init({
     live: true
 });
 $('.carousel').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3
+    dots: true,
+    speed: 1500,
+    autoplay: true,
+    autoplaySpeed: 8000,
+    infinite: true
 });
 
 /* Плавное перемещение */
-$('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
-    var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
-    if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
-        $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 700); // анимируем скроолинг к элементу scroll_el
+$('.go_to').click( function() {
+    var scroll_el = $(this).attr('href');
+    if ($(scroll_el).length !== 0) {
+        $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 700);
     }
-    return false; // выключаем стандартное действие
+    return false;
 });
 
 /* Модальное окно */
