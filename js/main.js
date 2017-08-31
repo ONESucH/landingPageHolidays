@@ -53,3 +53,25 @@ $('.right-block button').on('click', function () {
         })
     }
 });
+
+/* Отправк email */
+$('#mail').on('submit', function (e) {
+    e.preventDefault();
+    var dataUser = $(this).serialize();
+
+   console.log('dataUser', dataUser);
+
+   $.ajax({
+       method: 'POST',
+       url: '/mail.php',
+       data: dataUser,
+       success: function () {
+           console.log('Отправлены данные');
+       },
+       error: function () {
+           console.log('Ошибка отправки');
+       }
+   }).done(function (data) {
+       console.log('Полученные данные', data);
+   })
+});
