@@ -49,6 +49,9 @@
 
 .logo {
   flex-grow: 1;
+  a {
+    text-decoration: none;
+  }
   img {
     width: 165px;
   }
@@ -88,7 +91,7 @@
 
 #cont_4 {
   background: linear-gradient(hsla(0, 0%, 0%, 0.1), hsl(0, 0%, 0%, 0.1)),
-              url("../../images/3.jpg") no-repeat top left 20%;
+              url("../../images/3.png") no-repeat top left 20%;
   background-size: 130%;
 }
 
@@ -130,7 +133,7 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: 32.8%;
     font-size: 22px;
     text-transform: uppercase;
@@ -157,7 +160,7 @@
   }
 }
 
-.reviews {
+.reviews, .movies {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
@@ -341,6 +344,7 @@
   align-items: center;
   max-width: 450px;
   background: rgba(232,231,231,.8);
+  z-index: 3;
   h1 {
     display: block;
     width: 100%;
@@ -383,6 +387,7 @@
   align-items: center;
   max-width: 450px;
   background: rgba(232,231,231,.8);
+  z-index: 3;
   h1 {
     display: block;
     width: 100%;
@@ -416,31 +421,37 @@
   }
 }
 
+.support {
+  min-height: 80vh;
+}
+
 .location {
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 80vh;
-  z-index: 2;
-  text-align: center;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 20px;
   a {
-    position: relative;
-    margin: auto;
-    text-align: center;
-    display: block;
     width: 40px;
     height: 50px;
+    flex-grow: 1;
     background: url("../../images/down.png") top no-repeat;
     background-size: 20px;
     animation: pointer 1s alternate infinite linear;
   }
   span {
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: flex-start;
+    align-content: flex-end;
+    margin: auto;
     color: #fff;
-    font-size: 0.7em;
+    font-size: .7em;
     text-transform: uppercase;
-    font-weight: bold;
-    display: inline-block;
+    font-weight: 700;
+    flex-grow: 70
   }
 }
 
@@ -487,14 +498,19 @@
   }
   li {
     position: relative;
+    overflow: hidden;
     display: flex;
+    width: 240px;
+    height: 320px;
     flex-flow: column;
     align-items: center;
     margin: auto 5px;
   }
   img {
-    opacity: 0.7;
-    width: 100%;
+    opacity: .7;
+    max-width: max-content;
+    height: max-content;
+    margin-top: -19%;
     &:hover {
       transition: 0.5s;
       opacity: 1;
@@ -606,10 +622,14 @@
   border-radius: 100%;
   text-align: center;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 5;
   &:hover {
+    background: #621112;
     transition: 1s;
-    transform: rotate(180deg);
+    color: #fff;
   }
 }
 
@@ -620,6 +640,11 @@
 
 /* Карусель */
 .carousel {
+  width: auto;
+  iframe {
+    width: 100%;
+    min-height: 250px;
+  }
   div {
     display: flex;
     align-items: stretch;
@@ -647,9 +672,11 @@
     list-style: none;
   }
   p {
+    display: block;
+    overflow: hidden;
     width: 100%;
     text-align: center;
-    height: 145px;
+    height: 199px;
     text-overflow: ellipsis;
   }
   img {
@@ -680,4 +707,9 @@
       background: rgba(67, 113, 184, 0.81);
     }
   }
+}
+
+.movies-carousel div {
+  margin: auto;
+  padding: 0 10px;
 }
