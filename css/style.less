@@ -101,7 +101,8 @@
 
 #cont_3 .location > a,
 #cont_3_2 .location > a {
-  background: url("../../images/down-black.png") top no-repeat!important;
+  background: url("../../images/down_black.png") top no-repeat!important;
+  background-size: 25px!important;
 }
 
 #cont_2_2 {
@@ -436,7 +437,7 @@
     height: 50px;
     flex-grow: 1;
     background: url("../../images/down.png") top no-repeat;
-    background-size: 25px;
+    background-size: 25px!important;
     animation: pointer 1s alternate infinite linear;
   }
   span {
@@ -455,6 +456,7 @@
 
 .back-pointer {
   background: url("../../images/up.png") center no-repeat!important;
+  background-size: 25px!important;
 }
 
 .show-more {
@@ -505,10 +507,7 @@
     margin: auto 5px;
   }
   img {
-    opacity: .7;
-    max-width: max-content;
-    height: max-content;
-    margin-top: -19%;
+    opacity: .75;
     &:hover {
       transition: 0.5s;
       opacity: 1;
