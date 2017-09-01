@@ -1,2 +1,2 @@
-Посмотреть сайт:
+Посмотреть сайт :
 https://onesuch.github.io/landingPageHolidays/
