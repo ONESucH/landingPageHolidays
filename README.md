@@ -1,2 +1,2 @@
 Посмотреть сайт :
-https://onesuch.github.io/landingPageHolidays/
+<a href="https://onesuch.github.io/landingPageHolidays/">Demo</a>
