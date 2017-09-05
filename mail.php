@@ -1,6 +1,6 @@
 <?php
 $method = $_SERVER['REQUEST_METHOD'];
-$admin_email = "email@email.com";
+$admin_email = "dmitryipr@mail.ru";
 $application = "Новая заявка с сайта";
 
 $c = true;

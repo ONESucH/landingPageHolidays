@@ -10,7 +10,7 @@ new WOW().init({
     live: true
 });
 $('.carousel').slick({
-    dots: true,
+    dots: false,
     speed: 1500,
     autoplay: true,
     autoplaySpeed: 8000,
