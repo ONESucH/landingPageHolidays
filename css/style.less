@@ -1,6 +1,7 @@
 .content {
   position: relative;
   width: 100%;
+  min-height: 450px;
 }
 
 .container-width {
@@ -187,8 +188,9 @@
 
 .main-block-me {
   position: absolute;
-  left: 0;
-  top: 8vh;
+  width: 100%;
+  margin: auto;
+  bottom: 3.5vh;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -307,30 +309,30 @@
     margin: auto;
     animation: call-me 1s alternate infinite linear;
   }
-  a:before {
-    content: '';
-    display: block;
-    width: 80%;
-    position: absolute;
-    left: calc(-115%);
-    right: 0;
-    height: 1px;
-    background: #621112;
-    z-index: 3;
-    margin-top: 20px;
-  }
-  a:after {
-    content: '';
-    display: block;
-    width: 80%;
-    position: absolute;
-    left: calc(135%);
-    right: 0;
-    height: 1px;
-    background: #621112;
-    z-index: 3;
-    margin-top: -20px;
-  }
+  //a:before {
+  //  content: '';
+  //  display: block;
+  //  width: 80%;
+  //  position: absolute;
+  //  left: calc(-115%);
+  //  right: 0;
+  //  height: 1px;
+  //  background: #621112;
+  //  z-index: 3;
+  //  margin-top: 20px;
+  //}
+  //a:after {
+  //  content: '';
+  //  display: block;
+  //  width: 80%;
+  //  position: absolute;
+  //  left: calc(135%);
+  //  right: 0;
+  //  height: 1px;
+  //  background: #621112;
+  //  z-index: 3;
+  //  margin-top: -20px;
+  //}
   a span {
     display: block;
   }
