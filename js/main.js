@@ -3,7 +3,7 @@ var boolean, moreInformation = false;
 
 /* Инициальзация библиотек */
 modalWindow();
-$(":input").inputmask();
+$(':input').inputmask();
 new WOW().init({
     offset: 0,
     mobile: true,
@@ -15,6 +15,16 @@ $('.carousel').slick({
     autoplay: true,
     autoplaySpeed: 8000,
     infinite: true
+});
+$('.content-pages').fullpage({
+    css3: true,
+    scrollingSpeed: 700,
+    autoScrolling: false,
+    fitToSection: true, // подгоняет под экран
+    fitToSectionDelay: 700,
+    scrollBar: false,
+    easing: 'easeInOutCubic',
+    normalScrollElements: '#element1, #element2, #element2_2, #element3, #element3_2, #element4'
 });
 
 /* Плавное перемещение */
@@ -67,8 +77,10 @@ $('#mail').on('submit', function (e) {
        data: dataUser,
        success: function () {
            console.log('Отправлены данные');
+           $('.modal-window').hide();
        },
        error: function () {
+           $('.modal-window').hide();
            console.log('Ошибка отправки');
        }
    }).done(function (data) {
