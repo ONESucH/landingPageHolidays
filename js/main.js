@@ -36,6 +36,13 @@ $('.go_to').click( function() {
     return false;
 });
 
+$(document).ready(function () {
+    var sizeWindow = document.innerWidth;
+    if (a) {
+        // data-slick='{"slidesToShow": 3, "slidesToScroll": 2}'
+    }
+});
+
 /* Модальное окно */
 function modalWindow() {
     boolean = !boolean;
