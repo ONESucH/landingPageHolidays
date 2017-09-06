@@ -71,7 +71,7 @@
 
 #cont_1, #cont_2,
 #cont_3, #cont_3_2,
-#cont_4 {
+#cont_3_3, #cont_4 {
   position: relative;
   display: block;
   padding-top: 45px;
@@ -95,12 +95,13 @@
   background-size: 130%;
 }
 
-#cont_3 {
+#cont_3, #cont_3_3 {
   background: #fff;
 }
 
 #cont_3 .location > a,
-#cont_3_2 .location > a {
+#cont_3_2 .location > a,
+#cont_3_3 .location > a {
   background: url("../../images/down_black.png") top no-repeat!important;
   background-size: 25px!important;
 }
@@ -187,10 +188,11 @@
 .main-block-me {
   position: absolute;
   left: 0;
-  top: 10vh;
+  top: 8vh;
   display: flex;
   flex-flow: column;
   align-items: center;
+  z-index: 0;
 }
 
 .about-me {
@@ -247,7 +249,7 @@
   justify-content: center;
   align-items: flex-start;
   padding: 10px 20px;
-  max-width: 450px;
+  max-width: 485px;
   background: rgba(232,231,231,.8);
   p {
     text-transform: uppercase;
