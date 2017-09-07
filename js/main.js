@@ -82,8 +82,8 @@ $('#mail').on('submit', function (e) {
        method: 'POST',
        url: '/mail.php',
        data: dataUser,
-       success: function () {
-           console.log('Отправлены данные');
+       success: function (data) {
+           console.log('Отправлены данные', data);
            $('.modal-window').hide();
        },
        error: function () {
