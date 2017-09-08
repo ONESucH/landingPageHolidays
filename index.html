@@ -332,12 +332,12 @@
         <a onclick="modalWindow();" id="close-modal-window"><i class="fa fa-times" aria-hidden="true"></i></a>
         <h2>Оформите заявку</h2>
         <p>Отправьте Ваши контактные данные<br>и я с Вами свяжусь!</p>
-        <form action="" id="mail">
+        <form id="form">
             <label><input type="text" name="user_name" maxlength="10" pattern="^[А-Яа-яЁё\s]+$" placeholder="Имя: Александр" required></label>
             <label><input name="user_email" data-inputmask="'alias': 'email'" placeholder="Ваш email" required></label>
             <label><input type="text" name="user_number" data-inputmask="'mask': '+9(999)-999-99-99'" placeholder="Номер телефона" required></label>
             <label><textarea name="user_message" placeholder="Введите дату события, количество гостей, место проведения" required></textarea></label>
-            <button onsubmit="modalWindow()">Отправить</button>
+            <button type="submit">Отправить</button>
         </form>
     </div>
 </div>

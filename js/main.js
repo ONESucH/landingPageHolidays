@@ -36,13 +36,6 @@ $('.go_to').click( function() {
     return false;
 });
 
-$(document).ready(function () {
-    var sizeWindow = document.innerWidth;
-    if (a) {
-        // data-slick='{"slidesToShow": 3, "slidesToScroll": 2}'
-    }
-});
-
 /* Модальное окно */
 function modalWindow() {
     boolean = !boolean;
@@ -72,25 +65,27 @@ $('.right-block button').on('click', function () {
 });
 
 /* Отправк email */
-$('#mail').on('submit', function (e) {
+$('#form').submit(function (e) {
     e.preventDefault();
     var dataUser = $(this).serialize();
 
-   console.log('dataUser', dataUser);
+    console.log('dataUser', dataUser);
 
-   $.ajax({
-       method: 'POST',
-       url: '/mail.php',
-       data: dataUser,
-       success: function (data) {
-           console.log('Отправлены данные', data);
-           $('.modal-window').hide();
-       },
-       error: function () {
-           $('.modal-window').hide();
-           console.log('Ошибка отправки');
-       }
-   }).done(function (data) {
-       console.log('Полученные данные', data);
-   })
+    $.ajax({
+        type: 'POST',
+        url: '../mail.php',
+        data: dataUser,
+        success: function (e) {
+            console.log('Отправили данные', e);
+        },
+        error: function () {
+            console.log('Ошибка данных');
+            alert('Ошибка отправки');
+            $('#form').find('*').val('');
+        },
+    }).done(function () {
+        console.log('Форма очищена');
+        $('#form').find('*').val('');
+        $('.modal-window').hide();
+    });
 });
