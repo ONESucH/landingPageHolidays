@@ -75,13 +75,12 @@ $('#form').submit(function (e) {
         type: 'POST',
         url: '../mail.php',
         data: dataUser,
-        success: function (e) {
-            console.log('Отправили данные', e);
+        success: function () {
+            console.log('Отправили данные');
         },
         error: function () {
             console.log('Ошибка данных');
             alert('Ошибка отправки');
-            $('#form').find('*').val('');
         },
     }).done(function () {
         console.log('Форма очищена');

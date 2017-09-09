@@ -1,5 +1,5 @@
 <?
-$to =  'onesuch07@gmail.com'; // Почта получателя, через запятую можно указать сколько угодно адресов
+$to =  'Dmitryipr@mail.ru'; // Почта получателя, через запятую можно указать сколько угодно адресов
 $subject = 'Обратный звонок'; // Загаловок сообщения
 $message = '
                 <html>
@@ -14,7 +14,7 @@ $message = '
                     </body>
                 </html>';
 $headers  = "Content-type: text/html; charset=utf-8 \r\n"; // Кодировка письма
-$headers .= "From: Отправитель <from@example.com>\r\n"; // Наименование и почта отправителя
+$headers .= "From: Обратный звонок с сайта <from@example.com>\r\n"; // Наименование и почта отправителя
 mail($to, $subject, $message, $headers); // Отправка письма с помощью функции mail
 
 // Dmitryipr@mail.ru

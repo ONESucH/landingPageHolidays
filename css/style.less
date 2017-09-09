@@ -9,6 +9,7 @@
   max-width: 1000px;
   width: 100%;
   margin: auto;
+  height: 100%;
 }
 
 .header {
@@ -48,6 +49,17 @@
   }
 }
 
+.name {
+  display: block;
+  text-align: center;
+  margin-top: 22px;
+  p {
+    font-family: VivaldiD CL, sans-serif;
+    font-size: 3.8em;
+    color: #fef500;
+  }
+}
+
 .logo {
   flex-grow: 1;
   a {
@@ -76,8 +88,6 @@
   position: relative;
   display: block;
   padding-top: 45px;
-  width: 100%;
-  min-height: 100vh;
 }
 
 #cont_1 {
@@ -187,12 +197,13 @@
 }
 
 .main-block-me {
-  position: absolute;
+  position: relative;
   width: 100%;
+  height: 100%;
   margin: auto;
-  bottom: 3.5vh;
   display: flex;
   flex-flow: column;
+  justify-content: center;
   align-items: center;
   z-index: 0;
 }
@@ -425,10 +436,6 @@
   }
 }
 
-.support {
-  min-height: 80vh;
-}
-
 .location {
   position: absolute;
   bottom: 7vh;
@@ -459,6 +466,8 @@
 
 .show-more {
   display: none;
+  max-height: 18vh;
+  overflow-y: scroll;
 }
 
 .gallery {
