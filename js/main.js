@@ -21,7 +21,7 @@ $('.content-pages').fullpage({
     scrollingSpeed: 700,
     autoScrolling: false,
     fitToSection: true, // подгоняет под экран
-    fitToSectionDelay: 700,
+    fitToSectionDelay: 710,
     scrollBar: false,
     easing: 'easeInOutCubic',
     normalScrollElements: '#element1, #element2, #element2_2, #element3, #element3_2, #element4'
@@ -73,7 +73,7 @@ $('#form').submit(function (e) {
 
     $.ajax({
         type: 'POST',
-        url: '../mail.php',
+        url: 'ююmail.php',
         data: dataUser,
         success: function () {
             console.log('Отправили данные');
